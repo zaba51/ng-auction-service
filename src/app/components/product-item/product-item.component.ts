@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Product } from 'src/app/shared/product.service';
 
 @Component({
   selector: 'nga-product-item',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./product-item.component.css']
 })
 export class ProductItemComponent {
-
+  @Input() product: Product;
 }
